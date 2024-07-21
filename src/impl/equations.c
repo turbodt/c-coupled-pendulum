@@ -18,7 +18,7 @@ SystemEquations const * get_system_eq(void) {
 
 int function (double t, const double y[], double dydt[], void * p) {
     (void)(t);
-    SystemParameters const * params = (SystemParameters *) p;
+    SystemParameters const * params = p;
     dydt[0] = y[1];
     dydt[1] = -y[0];
     return GSL_SUCCESS;

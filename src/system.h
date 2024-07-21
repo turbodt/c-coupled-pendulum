@@ -5,6 +5,9 @@
 #include <stdlib.h>
 
 
+#define SYSTEM_DIM 2
+
+
 typedef struct SystemEquations {
     int (* const function) (double, const double[], double[], void *);
     int (* const jacobian) (double, const double[], double *, double[], void *);
@@ -26,6 +29,7 @@ typedef struct ProblemParamaters {
 typedef struct SystemParameters {
     size_t step_count;
     double t0;
+    double y0[SYSTEM_DIM];
     double t1;
     ProblemParamaters pp;
 } SystemParameters;

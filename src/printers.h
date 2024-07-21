@@ -6,6 +6,7 @@
 #include "./system.h"
 
 
+void print_headers(SystemParameters const *);
 void print_values(size_t, double, double[], SystemParameters const *);
 
 

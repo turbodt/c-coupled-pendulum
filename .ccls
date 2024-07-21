@@ -1,3 +1,3 @@
 clang
-%c -I./external/gls/include
+%c -I./external/gsl/include
 -std=c11

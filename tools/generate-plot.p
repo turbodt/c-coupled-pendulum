@@ -4,9 +4,8 @@ set output './data/graph.png'
 filedata = './data/out.txt'
 n = system(sprintf('cat %s | wc -l', filedata))
 
+set key autotitle columnhead
 set title "Line Graph of Two Columns"
-set xlabel "X-axis Label"
-set ylabel "Y-axis Label"
 
 set grid
 

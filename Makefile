@@ -55,6 +55,7 @@ clean:
 
 generate-plot: all
 	mkdir -p ./data
+	rm -f ./data/out.txt ./data/graph.png
 	./bin/main > ./data/out.txt
 	gnuplot -p tools/generate-plot.p
 	feh ./data/graph.png
