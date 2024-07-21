@@ -1,0 +1,6 @@
+external/
+data/
+build/
+bin/
+
+.ccls-cache/
