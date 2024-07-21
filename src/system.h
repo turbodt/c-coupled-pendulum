@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 
-#define SYSTEM_DIM 2
+#define SYSTEM_DIM 4
 
 
 typedef struct SystemEquations {

@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <memory.h>
+#include <math.h>
 #include <gsl/gsl_errno.h>
 #include <gsl/gsl_odeiv2.h>
 #include "./system.h"
 #include "./printers.h"
 
 
+#define PI 3.14159265358979323846
 #define H_START 1e-6
 #define EPS_ABS 1e-10
 #define EPS_REL 0.0
@@ -16,7 +18,7 @@ int main(void) {
     SystemParameters sys_params = {
         .step_count = 100,
         .t0 = 0.0,
-        .y0 = {1.0, 0.0},
+        .y0 = {PI / 4.0, 0.0, 0.0, 0.0},
         .t1 = 10.0,
         .pp = {
             .d = 1.0,
