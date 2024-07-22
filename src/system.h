@@ -23,6 +23,7 @@ typedef struct ProblemParamaters {
     double m2;
     double k;
     double g;
+    double mu;
 } ProblemParamaters;
 
 

@@ -16,19 +16,20 @@
 int main(void) {
 
     SystemParameters sys_params = {
-        .step_count = 100,
+        .step_count = 300,
         .t0 = 0.0,
-        .y0 = {PI / 4.0, 0.0, 0.0, 0.0},
-        .t1 = 10.0,
+        .y0 = {-PI / 4.0, 0.0, 0.0, 0.0},
+        .t1 = 60.0,
         .pp = {
             .d = 1.0,
             .l1 = 1.0,
             .l2 = 1.0,
-            .l3 = 0.5,
+            .l3 = 1.0,
             .m1 = 1.0,
             .m2 = 1.0,
             .k = 1.0,
             .g = 9.8,
+            .mu = 0.01,
         }
     };
     SystemEquations const * eq = get_system_eq();

@@ -55,9 +55,12 @@ clean:
 
 generate-plot: all
 	mkdir -p ./data
-	rm -f ./data/out.txt ./data/graph.png
+	rm -f ./data/out.txt ./data/phase.png ./energy.png ./out.webp
 	./bin/main > ./data/out.txt
-	gnuplot -p tools/generate-plot.p
-	feh ./data/graph.png
+	gnuplot -p tools/generate-plot-phase.p
+	feh ./data/phase.png &
+	gnuplot -p tools/generate-plot-energy.p
+	feh ./data/energy.png &
+	gnuplot -p tools/generate-video.p
 
 .PHONY: all clean generate-plot
