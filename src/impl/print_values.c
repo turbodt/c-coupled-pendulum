@@ -53,7 +53,8 @@ void print_values(
 
     double const dD = pp->d - D;
     double const Uk = 0.5 * pp->k * dD * dD;
-    double const Uh = pp->g * (pp->m1 * y5 + pp->m2 * y6);
+    double const Uh_0 = -pp->g * (pp->m1 * pp->l1 + pp->m2 *pp->l2);
+    double const Uh = pp->g * (pp->m1 * y5 + pp->m2 * y6) - Uh_0;
     double const E = T + Uk + Uh;
 
     printf("%zu %.5e", step, t);

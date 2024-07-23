@@ -11,7 +11,7 @@ set grid
 
 set style line 1 lt 1 lw 2 pt 7 ps 1.5 lc rgb 'blue'
 set style line 2 lt 1 lw 2 pt 7 ps 1.5 lc rgb 'red'
-set style line 3 lt 1 lw 2 pt 7 ps 1.5 lc rgb 'red'
+set style line 3 lt 1 lw 2 pt 7 ps 1.5 lc rgb 'green'
 set style line 4 lt 1 lw 2 pt 7 ps 1.5 lc rgb 'black'
 
 plot \
