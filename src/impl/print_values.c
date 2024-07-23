@@ -24,8 +24,8 @@ void print_values(
 
     double const theta1 = y[0];
     double const theta2 = y[1];
-    double const theta_dot_1 = y[0];
-    double const theta_dot_2 = y[1];
+    double const theta_dot_1 = y[2];
+    double const theta_dot_2 = y[3];
     double const theta_diff = theta2 - theta1;
 
     double const s1 = sin(theta1);
